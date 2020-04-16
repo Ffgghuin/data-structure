@@ -1,0 +1,78 @@
+/*-----------------枚举常量-----------------*/
+//ERROR_TOKEN--错误  IDENT--标识符  INT_CONST--整型常数  ASSIGN--赋值
+//EQ--相等  UEQ--不等  MORE--大于  LESS--小于  MOEQ--大于等于  LEEQ--小于等于
+//LP,RP--圆括号  LSB,RSB--方括号  LB,RB--花括号  SEMI--分号  COMMA--逗号
+//PLUS,SUBTRACT,MULTIPLY,DIVIDE--加减乘除 ENTER--换行  HASH--#  
+//SQM--单引号  DQM--双引号  PERC--百分号  AND--&&  OR--||  DOT--点
+//LCOMMENT,RCOMMENT--块注释  COMMENT--行注释  OP--运算符  OPN--操作数
+enum token_kind {
+	ERROR_TOKEN,IDENT,INT_CONST,FLOAT_CONST,CHAR_CONST,INT,FLOAT,CHAR,IF,
+	ELSE,FOR,DO,WHILE,BREAK,CONTINUE,RETURN,INCLUDE,DEFINE,EQ,UEQ,MORE,
+	LESS,MOEQ,LEEQ,ASSIGN,LP,RP,LSB,RSB,LB,RB,SEMI,COMMA,PLUS,SUBTRACT,
+	MULTIPLY,DIVIDE,ENTER,HASH,SQM,DQM,PERC,AND,OR,LCOMMENT,RCOMMENT,
+	COMMENT,PROGRAM,EXTDEFLIST,EXTDEF,EXTVARDEF,FUNCDEF,FORMPAR,COMPSEN,
+	LOCVARDEF,SENTLIST,SENTENCE,EXP,OP,OPN,PRETREATMENT,LOCDEFLIST,DOT,
+};
+    ERROR_TOKEN     错误                0
+    IDENT           标识符              1
+    INT_CONST       整型常量            2
+    FLOAT_CONST     浮点型常量          3
+    CHAR_CONST      字符型常量          4
+    INT             整型                5
+    FLOAT           浮点型              6       
+    CHAR            字符型              7
+    IF              关键字              8
+    ELSE            关键字              9
+	FOR             关键字              10
+    DO              关键字              11
+    WHILE           关键字              12
+    BREAK           关键字              13
+    CONTINUE        关键字              14
+    RETURN          关键字              15
+    INCLUDE         文件包含            16
+    DEFINE          宏定义              17
+    EQ              相等                18
+    UEQ             不等                19
+    MORE            大于                20
+    LESS            小于                21
+    MOEQ            大于等于            22
+    LEEQ            小于等于            23
+    ASSIGN          赋值                24
+	LP              左括号              25
+    RP              右括号              26
+    LSB             左方括号            27
+    RSB             右方括号            28
+    LB              左花括号            29
+    RB              右花括号            30
+    SEMI            分号                31
+    COMMA           逗号                32
+    PLUS            加号                33
+    SUBTRACT        减号                34
+    MULTIPLY        乘号                35
+    DIVIDE          除号                36
+	ENTER           回车                37
+    HASH            井号                38
+    SQM             单引号              39
+    DQM             双引号              40
+    PERC            百分号              41
+    AND             逻辑与              42
+    OR              逻辑或              43
+    LCOMMENT        左块注释            44
+    RCOMMENT        右块注释            45
+    COMMENT         行注释              46
+	PROGRAM         程序                47
+    EXTDEFLIST      外部定义序列        48
+    EXTDEF          外部定义            49
+    EXTVARDEF       外部变量定义        50
+    FUNCDEF         函数                51
+    FORMPAR         函数形参            52
+    COMPSE          复合语句            53
+    LOCVARDEF       内部变量定义        54
+	SENTLIST        语句序列            55
+    SENTENCE        语句                56
+    EXP             表达式              57
+    OP              运算符              58
+    OPN             操作数              59
+    PRETREATMENT    预处理指令          60
+    LOCDEFLIST      局部定义序列        61
+    DOT             点                  63

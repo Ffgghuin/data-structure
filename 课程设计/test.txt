@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include "head.h"
+#define and 65
+#define or 8
+int test(int a, float b, char c);
+int m, arry1[50];
+float n, arry2[7];
+char arry3[100];
+int test(int a, float b, char c){
+    int l;
+    float ret, not;
+    char p, q;
+    m = a + b * n / (l - a);
+    if(a > b && m <= n || a < m && b >= n){
+        if(ret - not == 0){
+            m = arry1[5] + 1;
+            ret = arry2[0] + 525.365;
+            continue;
+        }
+        while(m % b == n){
+            p = arry3[0];    
+            while(ret){
+                arry1[6] = arry1[7];
+            }       
+        }
+    } 
+    else{
+        for(m = 1; m != l; l = m){
+            if(a && b || m && n){
+                a = 0123 * 0x4BD;
+                break;
+            }
+            for(; l == 7; ){
+                l = m;
+            }
+        }
+        l = 0;
+    }
+    return a + b / l;
+}
